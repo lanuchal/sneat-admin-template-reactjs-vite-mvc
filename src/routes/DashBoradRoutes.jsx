@@ -1,0 +1,38 @@
+import React from "react";
+
+import { Routes, Route } from "react-router-dom";
+
+import Menu from "../common/dashborad/Menu";
+import Nav from "../common/dashborad/Nav";
+import Footer from "../common/dashborad/Footer";
+
+import "../assets/vendor/fonts/boxicons.css";
+import "../assets/vendor/css/core.css";
+import "../assets/vendor/css/theme-default.css";
+import "../assets/css/demo.css";
+import "../assets/css/custom.css";
+import "../assets/vendor/fonts/boxicons.css";
+import "../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css";
+import ControllerDashborad from "../containers/dashboard/ControllerDashborad";
+// import 'react-perfect-scrollbar/dist/css/styles.css';
+
+function DashBoradRoutes() {
+  return (
+    <div className="layout-wrapper layout-content-navbar">
+      <div className="layout-container">
+        <Menu />
+        <div className="layout-page page-fix">
+          <Nav />
+          <div className="content-wrapper">
+            <Routes>
+              <Route path="/dashborad" element={<ControllerDashborad />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default DashBoradRoutes;

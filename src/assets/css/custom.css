@@ -1,0 +1,23 @@
+.cursor {
+  cursor: pointer;
+}
+.box-menu {
+  height: 100vh;
+  position: fixed;
+}
+.page-fix {
+  /* background-color: aqua; */
+  margin-left: 16.5rem;
+}
+.box-nav {
+  z-index: 0;
+}
+@media only screen and (max-width: 1200px) {
+  .page-fix {
+    margin-left: auto;
+  }
+  .box-menu {
+    display: none;
+    z-index: 2;
+  }
+}
