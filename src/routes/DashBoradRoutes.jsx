@@ -12,20 +12,26 @@ import "../assets/vendor/css/theme-default.css";
 import "../assets/css/demo.css";
 import "../assets/css/custom.css";
 import "../assets/vendor/fonts/boxicons.css";
-import "../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css";
-import ControllerDashborad from "../containers/dashboard/ControllerDashborad";
-// import 'react-perfect-scrollbar/dist/css/styles.css';
+import "react-perfect-scrollbar/dist/css/styles.css";
+
+import TableController from "../containers/tables/TableController";
+import DashboardController from "../containers/dashboard/DashboardController";
+import IconsController from "../containers/box-icons/IconsController";
+import CardController from "../containers/card/CardController";
 
 function DashBoradRoutes() {
   return (
-    <div className="layout-wrapper layout-content-navbar">
+    <div className="layout-wrapper layout-content-navbar" >
       <div className="layout-container">
         <Menu />
         <div className="layout-page page-fix">
           <Nav />
           <div className="content-wrapper">
             <Routes>
-              <Route path="/dashborad" element={<ControllerDashborad />} />
+              <Route path="/dashboard" element={<DashboardController />} />
+              <Route path="/tables" element={<TableController />} />
+              <Route path="/card" element={<CardController />} />
+              <Route path="/icons" element={<IconsController />} />
             </Routes>
           </div>
           <Footer />

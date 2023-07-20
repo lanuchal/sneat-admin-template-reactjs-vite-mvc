@@ -11,7 +11,8 @@ function Nav() {
   const handleClick = () => {
     dispatch(showMenu());
   };
-  console.log("menuState", menuStore);
+  
+  // console.log("menuState", menuStore);
 
   return (
     <nav

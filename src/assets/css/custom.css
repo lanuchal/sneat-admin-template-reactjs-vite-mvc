@@ -4,6 +4,8 @@
 .box-menu {
   height: 100vh;
   position: fixed;
+  overflow-x: inherit;
+  /* overflow-x: hidden; */
 }
 .page-fix {
   /* background-color: aqua; */
@@ -12,6 +14,17 @@
 .box-nav {
   z-index: 0;
 }
+
+.shadow-menu {
+  display: none;
+}
+.box-btn-hidden-menu {
+  display: none;
+  background-color: rgb(255, 255, 255);
+}
+.box-ul {
+  /* overflow-y: scroll; */
+}
 @media only screen and (max-width: 1200px) {
   .page-fix {
     margin-left: auto;
@@ -19,5 +32,16 @@
   .box-menu {
     display: none;
     z-index: 2;
+  }
+  .shadow-menu {
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    opacity: 0.5;
+  }
+  .box-btn-hidden-menu {
+    display: block;
+    position: absolute;
+    right: -1.1rem;
   }
 }
