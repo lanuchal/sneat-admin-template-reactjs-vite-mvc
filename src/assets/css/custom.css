@@ -25,6 +25,9 @@
 .box-ul {
   /* overflow-y: scroll; */
 }
+.z-10000{
+  z-index: 10000;
+}
 @media only screen and (max-width: 1200px) {
   .page-fix {
     margin-left: auto;

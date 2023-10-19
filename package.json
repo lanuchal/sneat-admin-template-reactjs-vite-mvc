@@ -12,8 +12,11 @@
   "dependencies": {
     "@react-spring/web": "^9.7.3",
     "@reduxjs/toolkit": "^1.9.5",
+    "datatables.net-bs5": "^1.13.6",
+    "datatables.net-dt": "^1.13.6",
     "perfect-scrollbar": "^1.5.5",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.9.0",
     "react-dom": "^18.2.0",
     "react-perfect-scrollbar": "^1.5.8",
     "react-redux": "^8.1.1",
